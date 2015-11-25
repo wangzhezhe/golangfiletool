@@ -87,7 +87,7 @@ func CopyDir(source string, dest string) (err error) {
 	return
 }
 
-//compress the file
+//compress the file (if compress to the zip file , using the similar package: zip.FileInfoHeader)
 func Filecompress(tw *tar.Writer, dir string, fi os.FileInfo) error {
 
 	//打开文件 open当中是 目录名称/文件名称 构成的组合
